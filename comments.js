@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 // import the model
-const Comments = require('../models/comments');
+const Comments = require('./models/comments');
 
 // create router object
 const commentRouter = express.Router();
@@ -88,4 +88,4 @@ commentRouter.route('/:commentId')
             });
             // finish the web server route
     }
-)
+);
